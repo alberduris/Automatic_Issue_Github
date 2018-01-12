@@ -1,0 +1,19 @@
+Note, it is possible that when you look in the code you'll find that parts of this issue were completed on the backend while implementing another issue. This is normal as features do not live in isolation. If this is the case, just take it as a convenience that someone already built that part and press on!
+
+### Every Reference You Might Need for this Issue:
+
+- For a reference on the operation this performs check out [PyTorch](http://pytorch.org/docs/master/tensors.html)'s documentation.
+- For a reference on how to program in Unity, check out [this basic tutorial](https://unity3d.com/learn/tutorials/projects/roll-ball-tutorial)
+- For a reference on how to write HLSL code, check out [this basic tutorial](http://kylehalladay.com/blog/tutorial/2014/06/27/Compute-Shaders-Are-Nifty.html)
+- For a complete tutorial on how to add functions to FloatTensor (step by step guide) see [this Google Document](https://docs.google.com/document/d/1WRd7gGLFN0Awtf86AICYIHtg3gfFWLBa5wYTthsB3i0/edit)
+- For a reference on how other functions like this have been implemented check out the functions in [this notebook](https://github.com/OpenMined/OpenMined/blob/master/notebooks/Syft%20Tensor%20Example%20Notebook.ipynb) as well as the corresponding files that made it possible ([SyftController](https://github.com/OpenMined/OpenMined/blob/master/UnityProject/Assets/OpenMined/Network/Controllers/SyftController.cs), [FloatTensor.Ops](https://github.com/OpenMined/OpenMined/blob/master/UnityProject/Assets/OpenMined/Syft/Tensor/FloatTensor.Ops.cs), [FloatTensorShaders](https://github.com/OpenMined/OpenMined/blob/master/UnityProject/Assets/OpenMined/Syft/Tensor/Ops/Shaders/FloatTensorShaders.compute), [TensorOpsShaders](https://github.com/OpenMined/OpenMined/blob/master/UnityProject/Assets/OpenMined/Syft/Tensor/Ops/Shaders/TensorOpsShaders.compute), [FloatTensorTest](https://github.com/OpenMined/OpenMined/blob/master/UnityProject/Assets/OpenMined.Tests/Editor/FloatTensor/FloatTensorTest.cs) and [FloatTensorGpuTest](https://github.com/OpenMined/OpenMined/blob/master/UnityProject/Assets/OpenMined.Tests/Editor/FloatTensor/FloatTensorGpuTest.cs)).
+- And of course, please consider our [Contributor Guidelines](https://github.com/OpenMined/Docs/blob/master/contributing/guidelines.md) for all contributions.
+
+### Acceptance Criteria:
+
+- [ ] comment below that you're picking up this project
+- [ ] an example in a notebook in our [tests folder](https://github.com/OpenMined/OpenMined/tree/master/notebooks/tests) showing how to use the functionality from PySyft
+- [ ] an integration test in PySyft demonstrating the correct CPU operation implemented over an IntTensor while connected to a Unity backend
+- [ ] a Unit Test in OpenMined/OpenMined demonstrating the correct operation on a FloatTensor
+- [ ] [inline](http://pytorch.org/docs/master/tensors.html) documentation in the python code. For inspiration on inline documentation, please check out PyTorch's documentation for this operator.
+- [ ] Link your Pull Request back to this Issue so that it gets closed appropriately when the PR is merged.
